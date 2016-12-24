@@ -1,0 +1,158 @@
+@import './partials/clearfix';
+@import './partials/general_styles';
+@import './partials/reset';
+
+  body {
+    background-image: url("../assets/bg.jpg");
+  }
+
+  #header {
+    background-color: white;
+
+  @include respond-to('medium'){
+    background-image: url("../assets/header_bg.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  }
+
+  #logo {
+    background-image: url("../assets/logo.svg");
+    /* background-color: */
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+
+  @include respond-to('medium'){
+    background-position: center;
+  }
+}
+
+  #plus-box {
+  height: 30px;
+  width: 30px;
+  border: 2px #F48254 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  transition: background 0.3s;
+  float: right;
+  line-height: 60px;
+  }
+
+  #plus-box:hover {
+  background-color: #F1592A;
+  border: 2px #F1592A solid;
+  transition: background 0.3s, border 0.3s; }
+
+  #plus-char {
+  color: #B74326;
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 60px;
+  }
+
+  #plus-char:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .bullet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .foodImages {
+    background-size: cover;
+  }
+
+  #my-board:hover {
+    color: orange;
+    cursor: pointer;
+  }
+
+  #random:hover {
+    color: orange;
+    cursor: pointer;
+  }
+
+  #get-app:hover {
+    color: orange;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    height: 50px;
+    line-height: 45px;
+    background-color: #3A3A3C;
+    font-family: Oswald;
+    color: #818285;
+    justify-content: center;
+  }
+
+  .piktures:hover {
+    border: solid orange 4px;
+  }
+
+  .title {
+    font-family: Oswald;
+  }
+
+  .info {
+    font-family: Oswald;
+    color: #797A7D;
+    margin-top: 40px;
+  }
+
+  #content {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    background-size: cover;
+
+
+  }
+
+   .piktures {
+    flex: 1 1 33%;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    background-color: 'red';
+    height: 350px;
+    justify-content: center;
+    -webkit-box-shadow: 10px 5px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 5px 6px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 5px 6px 1px rgba(0,0,0,0.75);
+
+    @include respond-to('medium'){
+      flex: 0 1 33%;
+      flex-flow: row nowrap;
+      background-size: cover;
+      justify-content: center;
+
+    }
+
+    @include respond-to('large'){
+      flex: 0 1 32%;
+      text-align: center;
+
+    }
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+}
+
+
+
+
